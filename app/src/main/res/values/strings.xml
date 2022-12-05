@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">letterbooks</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tvTitleOnBoarding">The right person with the right book</string>
+    <string name="tvDescOnBoarding">Starting with registering I will make it easier for users to do their activities</string>
+</resources>
