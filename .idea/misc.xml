@@ -3,12 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/bg_input_auth.xml" value="0.1815" />
+        <entry key="app/src/main/res/drawable/bg_singup.xml" value="0.1815" />
         <entry key="app/src/main/res/drawable/btn_onboarding.xml" value="0.1815" />
+        <entry key="app/src/main/res/drawable/card_corner.xml" value="0.1815" />
         <entry key="app/src/main/res/drawable/test.xml" value="0.1815" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3645833333333333" />
         <entry key="app/src/main/res/layout/activity_opening.xml" value="0.3645833333333333" />
         <entry key="app/src/main/res/layout/fragment_on_boarding.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_sign_in.xml" value="0.2992731936725096" />
+        <entry key="app/src/main/res/layout/fragment_sign_up.xml" value="0.27155609130859376" />
         <entry key="app/src/main/res/layout/fragment_splash.xml" value="0.2877297990594271" />
         <entry key="app/src/main/res/layout/fragment_splash_screen.xml" value="0.3645833333333333" />
       </map>
