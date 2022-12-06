@@ -12,4 +12,6 @@
     <string name="tvEmail">Email</string>
     <string name="tvPassword">Password</string>
     <string name="tvCreateAccount">Create Account</string>
+    <string name="tvLogin">Login</string>
+    <string name="tvDescLogin">login to your account</string>
 </resources>
