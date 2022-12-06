@@ -8,4 +8,8 @@
     <string name="tvDescRegis">Create a new account</string>
     <string name="tvFirstName">Fist Name</string>
     <string name="tvLastName">Last Name</string>
+    <string name="tvPhone">Phone</string>
+    <string name="tvEmail">Email</string>
+    <string name="tvPassword">Password</string>
+    <string name="tvCreateAccount">Create Account</string>
 </resources>

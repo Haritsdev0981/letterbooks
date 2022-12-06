@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="mg_top">40dp</dimen>
+    <dimen name="mg_top_40">40dp</dimen>
+    <dimen name="mg_top_30">30dp</dimen>
+    <dimen name="mg_top_20">20dp</dimen>
 </resources>

@@ -28,7 +28,7 @@
         android:id="@+id/txtRegister"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="@dimen/mg_top_20"
         android:text="@string/tvRegister"
         android:textColor="@color/white"
         android:textSize="24sp"
@@ -49,7 +49,7 @@
         android:id="@+id/vvCard"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="@dimen/mg_top_30"
         android:background="@drawable/card_corner"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -74,7 +74,7 @@
             android:id="@+id/txtFirstName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/mg_top"
+            android:layout_marginTop="@dimen/mg_top_40"
             android:text="@string/tvFirstName"
             android:textAllCaps="true"
             android:textSize="18sp"
@@ -83,35 +83,135 @@
 
         <EditText
             android:id="@+id/edtFirtName"
-            android:layout_width="150dp"
+            android:layout_width="0dp"
             android:layout_height="50dp"
+            android:hint="@string/tvFirstName"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/guideline2"
-            app:layout_constraintTop_toBottomOf="@+id/txtFirstName" />
+            app:layout_constraintEnd_toStartOf="@+id/edtLastName"
+            app:layout_constraintTop_toBottomOf="@+id/txtFirstName"
+            android:layout_marginEnd="10dp"/>
 
         <TextView
             android:id="@+id/txtLastName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/mg_top"
+            android:layout_marginTop="@dimen/mg_top_40"
             android:text="@string/tvLastName"
             android:textAllCaps="true"
             android:textSize="18sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintStart_toEndOf="@+id/txtFirstName"
+            app:layout_constraintStart_toStartOf="@+id/edtLastName"
             app:layout_constraintTop_toTopOf="@+id/vvCard" />
 
         <EditText
             android:id="@+id/edtLastName"
-            android:layout_width="150dp"
+            android:layout_width="0dp"
             android:layout_height="50dp"
+            android:hint="@string/tvLastName"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
             app:layout_constraintHorizontal_bias="0.45"
             app:layout_constraintStart_toEndOf="@+id/edtFirtName"
             app:layout_constraintTop_toBottomOf="@+id/txtLastName" />
+
+        <TextView
+            android:id="@+id/txtPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mg_top_30"
+            android:text="@string/tvPhone"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/edtFirtName" />
+
+        <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/tvPhone"
+            android:inputType="phone"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toEndOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/txtPhone" />
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mg_top_30"
+            android:text="@string/tvEmail"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@id/edtPhone" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/tvEmail"
+            android:inputType="textEmailAddress"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toEndOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+        <TextView
+            android:id="@+id/txtPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mg_top_30"
+            android:text="@string/tvPassword"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@id/edtEmail" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/tvPassword"
+            android:inputType="textVisiblePassword"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toEndOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvBtn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/mg_top_30"
+            android:backgroundTint="@color/dark_green"
+            app:cardCornerRadius="5dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toEndOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/edtPassword">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tvCreateAccount"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
